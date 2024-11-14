@@ -669,8 +669,9 @@ img{
 /* CAROUSEL START */
 .carousel-section{
   padding-block: var(--section-spacing);
-  background-color: var(--color-bg-secondary); /*ljust tema*/
-  background-color:var(--clr-bg-carouselldark);/*Mörkt tema*/
+  background-color: var(--color-bg-inner);
+  /* background-color: var(--color-bg-secondary); 
+  background-color:var(--clr-bg-carouselldark); */
   text-align: center;
 
   .carousel{
@@ -804,6 +805,7 @@ img{
 
 #lovingclients {
   background-color: var(--color-bg-inner);
+  /* background-color: var(--color-bg-outer); */
   padding: 4rem 2rem;
   display: flex;
   justify-content: center;
@@ -895,6 +897,11 @@ img{
   color: var(--color-gray100);
   color: var(--clr-text-heading);
 }
+
+@media (width < 768px){
+  display: none;
+}
+
 }
 
 /* 
